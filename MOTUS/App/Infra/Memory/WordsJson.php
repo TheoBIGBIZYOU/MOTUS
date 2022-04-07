@@ -40,7 +40,7 @@ class WordsJson
         $strLen = strlen($currentWord);
         echo "Le mot contient : $strLen caractères <br><br>";
         if (strlen($word) === strlen($_COOKIE['currentWord'])) {
-            if($nbTentative <= 6) {
+            if($nbTentative <= 5) {
                 echo '<div class="word">';
                 echo "Tentative n° $nbTentative ";
                 $tabWord = str_split($word);
