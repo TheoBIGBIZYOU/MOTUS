@@ -1,0 +1,13 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Elo;
+
+class Word
+{
+    public function __construct(string $word)
+    {
+        $this->word = $word;
+    }
+}
