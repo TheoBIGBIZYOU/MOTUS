@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Routing;
 
 use App\Controller\Controller;
-use App\Controller\Homepage;
 use App\Controller\Error404;
+use App\Controller\Homepage;
 use App\Controller\NewGame;
 use App\Controller\Victoire;
 
@@ -20,7 +20,7 @@ class Router
         '/' => Homepage::class,
         '/404' => Error404::class,
         '/retry' => NewGame::class,
-        '/victoire' => Victoire::class
+        '/victoire' => Victoire::class,
     ];
 
     public function __construct()
